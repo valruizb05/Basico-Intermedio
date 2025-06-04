@@ -9,7 +9,7 @@
 }
 
 body {
-    background-image: url(/CSS_Avanzado/img1.jpg);
+    background-image: url(../CSS_Avanzado/img1.jpg);
     background-position: center;
     background-size: cover;
     margin: 0;
