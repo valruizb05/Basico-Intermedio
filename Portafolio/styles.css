@@ -1,0 +1,179 @@
+:root {
+    --rosa: #ff69b4;
+    --rosa-claro: #ffe6f0;
+    --gris-texto: #444;
+    --blanco: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--blanco);
+    color: var(--gris-texto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    min-height: 100vh;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--rosa-claro);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.3);
+    padding: 50px 30px;
+    max-width: 900px;
+    width: 100%;
+    text-align: center;
+}
+
+.imagen img {
+    width: 280px;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(255, 105, 180, 0.2);
+}
+
+.titulo {
+    font-size: 3rem;
+    color: var(--rosa);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #b3005c;
+    margin-bottom: 20px;
+}
+
+.frase {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.botonera {
+    margin-bottom: 40px;
+}
+
+.botonera a {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: var(--rosa);
+    color: rgb(24, 22, 22);
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.botonera a:hover {
+    background-color: #e0559c;
+}
+
+.tecnologias {
+    margin-top: 40px;
+}
+
+.tecnologias h2 {
+    color: var(--rosa);
+    font-size: 2rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--rosa);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.grid-tecnologias {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.card-tecnologia {
+    background-color: #ecc4d2;
+    border: 2px solid var(--rosa);
+    border-radius: 12px;
+    padding: 20px;
+    width: 130px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(255, 105, 180, 0.2);
+    transition: transform 0.3s;
+}
+
+.card-tecnologia:hover {
+    transform: translateY(-5px);
+}
+
+.card-tecnologia img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: -10px;
+}
+
+.card-tecnologia p {
+    font-weight: bold;
+    color: #d63384;
+}
+
+.contacto {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #ffe6f0;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(255, 105, 180, 0.2);
+}
+
+.contacto h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ff69b4;
+}
+
+.contacto form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto input,
+.contacto textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: inherit;
+}
+
+.contacto button {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contacto button:hover {
+    background-color: #e65a9d;
+}
+

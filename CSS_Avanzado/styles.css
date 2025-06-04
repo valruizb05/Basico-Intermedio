@@ -1,0 +1,131 @@
+#main-header{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #d22c79;
+    color: white;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+.highlight{
+    background-color: #e480ae;
+    color: white;
+   font-family: cursive;
+   text-align: center;
+   border-radius: 10px;
+   margin: 50px;
+   padding: 10px;
+}
+
+/** * Metodología BEM */
+.navbar_item{
+    background-color: #db5693;
+    display:inline-block; /* acomodar lista en línea */
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+.navbar_item--active{
+    background-color: #d22c79;
+}
+
+/** Imagen*/
+body{
+    background-image: url(img1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.button{
+    background-color: #f1bfd6;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.button--large{
+    padding: 10px 40px;
+    border-radius: 10px;
+}
+
+.button_icon{
+    margin-right: 30px;
+}
+
+.block{
+    background-color: #f1bfd6 ;
+    display: block;
+}
+
+.inline{
+    background-color:   #edaac9 ;
+    display: inline;
+}
+
+.hidden{
+    background-color: #e895bc;
+    display: none;
+}
+
+.inline-block{
+    background-color: #e480ae;
+    display: inline-block;
+}
+
+.relative{
+    background-color: #d22c79;
+    position: relative;
+    left: 20px;
+}
+
+.absolute{
+    background-color: #db5693;
+    position: absolute;
+     left: 20px;
+    top: 100px;
+}
+
+.fixed{
+    background-color: #df6ba1;
+    position: fixed;
+   right: 20px;
+    top: 20px;
+}
+
+.sticky{
+    background-color: #d64186;
+    position: sticky;
+}
+
+.container{
+    background-color: fuchsia;
+    width: 80%;
+    margin: 0 auto; /* Centra el contenedor */
+    padding: 20px;
+}
+
+body {
+  font-size: 16px;
+}
+
+/* Estilos para pantallas medianas (por ejemplo, tablets) */
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+/* Estilos para pantallas grandes (por ejemplo, desktops) */
+@media (min-width: 1024px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+/* Puedes agregar más rangos de ancho de pantalla si lo necesitas */
+@media (min-width: 1200px) {
+  body {
+    font-size: 22px;
+  }
+}

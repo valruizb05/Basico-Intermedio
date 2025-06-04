@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML avanzado</title>
+</head>
+
+<body>
+    <h1>HTML avanzado</h1>
+    <br>
+    <h3>Tablas de HTML</h3>
+    <table border="1">
+        <tr><!---* Fila* -->
+        <tr>
+            <th colspan="4">Tienda Generation</th> <!-- Ocupa las 4 columnas -->
+        </tr>
+        <th>Cursos</th><!---Encabezado -->
+        <th>Termos</th>
+        <th>Playeras</th>
+        <th>Material de estudio</th>
+        </tr>
+        <tr>
+            <td>HTML</td>
+            <td>Yeti</td>
+            <td>Logo grande color negro</td>
+            <td>Manual HTML</td>
+        </tr>
+        <tr>
+            <td>CSS</td>
+            <td>Stanley</td>
+            <td>Tipo Polo</td>
+            <td>Links y PDF's</td>
+        </tr>
+    </table>
+
+    <hr>
+    <table border="1" style="text-align: center;">
+        <thead> <!---Agrupa los elementos en la cabecera-->
+            <tr>
+                <th colspan="4">Curso HTML</th>
+            </tr>
+        </thead>
+        <br>
+        <tbody>
+            <tr>
+                <th>Cursos</th><!---Encabezado -->
+                <th>Cantidad personas</th>
+                <th>Duración</th>
+                <th>Inicio</th>
+            </tr>
+
+            <tr>
+                <td>HTML</td>
+                <td>23</td>
+                <td>240 hrs</td>
+                <td>3 agosto</td>
+            </tr>
+
+            <tr>
+                <td>CSS</td>
+                <td>25</td>
+                <td>220 hrs</td>
+                <td>5 septiembre</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th colspan="4">Encabezado de tabla</th>
+            </tr>
+        </tfoot>
+    </table>
+    <hr>
+    <br>
+    <h3>Vinculos de anclaje</h3>
+    <br>
+    <a href="../Reto01/index.html" target="_blank">Practica HTML</a>
+    <br>
+    <h5>Númerosa de teléfono</h5>
+    <a href="tel: +527772604121">Teléfono vale</a>
+    <br>
+    <h5>Anclaje de Whatsapp</h5>
+    <a href="https://wa.me/1234567890">Enviame un whats</a>
+    <br>
+    <h5>Anclaje de un Mapa</h5>
+    <a href="https://maps.app.goo.gl/XzFV2tizkzPdZL357">Mapa</a>
+    <br>
+    <hr>
+    <br>
+    <h3>Formulario</h3>
+    <br>
+    <form action="procesar_form" method="get">
+        <input type="text" placeholder="Nombre">
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar</button>
+        <br>
+        <input type="email" placeholder="Correo electrónico">
+        <br>
+        <input type="password" placeholder="Contraseña">
+        <br>
+        <input type="checkbox" name="terminos" id="terminos">
+        <label for="terminos">Acepto los términos y condiciones</label>
+        <br>
+        <input type="radio" name="genero" id="masculino" value="masculino">
+        <label for="masculino">Masculino</label>
+        <input type="radio" name="genero" id="femenino" value="femenino">
+        <label for="femenino">Femenino</label>
+        <br>
+        <select name="pais" id="pais">
+            <option value="mexico">México</option>
+            <option value="españa">España</option>
+            <option value="argentina">Argentina</option>
+            <option value="colombia">Colombia</option>
+        </select>
+        <br>
+        <h5>fecha</h5>
+        <label for="date"><input type="date"></label>
+        <br>
+        <br>
+        <h5>hora</h5>
+        <label for="time"><input type="time"></label>
+        <br>
+        <textarea name="comentarios" id="comentarios" cols="30" rows="10" placeholder="Comentarios"></textarea>
+        <br>
+        <input type="file" name="archivo" id="archivo">
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+    <br>
+    <h3>Elementos multimedia</h3>
+    <br>
+    <h4>Video</h4>
+    <video width="320" height="240" controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+    </video>
+    <br>
+    <h4>Audio</h4>
+    <audio controls>
+        <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+    <br>
+    <button><a href="../Básico/practicaCSS/index.html">Regresar</a></button>
+
+</body>
+
+</html>
